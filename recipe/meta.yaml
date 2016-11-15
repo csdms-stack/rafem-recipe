@@ -27,8 +27,8 @@ build:
 test:
   imports:
     - rafem
-  commands:
-    - nosetests --with-doctest rafem
+  # commands:
+  #   - nosetests --with-doctest rafem
 
 about:
   home: https://github.com/katmratliff/avulsion-bmi
