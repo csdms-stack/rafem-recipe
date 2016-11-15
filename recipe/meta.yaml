@@ -1,0 +1,37 @@
+{% set name = "rafem" %}
+{% set version = "0.1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/katmratliff/avulsion-bmi
+
+requirements:
+  build:
+    - python
+    - numpy
+    - nose
+  run:
+    - python
+    - numpy
+    - nose
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
+test:
+  imports:
+    - rafem
+  commands:
+    - nosetests --with-doctest rafem
+
+about:
+  home: https://github.com/katmratliff/avulsion-bmi
+  license: MIT
+  summary: |
+    Morphodynamic river avulsion module designed to be coupled with
+    the Coastline Evolution Model (CEM) and Sedflux 3D.
+  dev_url: https://github.com/katmratliff/avulsion-bmi
