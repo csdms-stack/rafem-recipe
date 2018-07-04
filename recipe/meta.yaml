@@ -15,6 +15,7 @@ requirements:
     - python
     - numpy
     - nose
+    - model_metadata
   run:
     - python
     - numpy
