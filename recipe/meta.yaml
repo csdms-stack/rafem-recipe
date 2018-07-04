@@ -8,7 +8,7 @@ package:
 source:
   url: https://github.com/mcflugen/avulsion-bmi/archive/v{{ version }}.tar.gz
   fn: avulsion-bmi-{{ version }}.tar.gz
-  sha256: 760341d154fde5cd543c8cd36cf28767df08a0aa95bcfa7cbb8af871ef4fd1e9
+  sha256: ece32fbfd3db559170e92f0f0e8d83a5ff889fabe5a059856e76582c80dce16e
 
 requirements:
   build:
