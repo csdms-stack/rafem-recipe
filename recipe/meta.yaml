@@ -30,6 +30,9 @@ build:
 test:
   imports:
     - rafem
+  commands:
+    - mmd-stage BmiRiverModule _rafem
+    - bmi-test rafem:BmiRiverModule --infile=input.yaml
   # commands:
   #   - nosetests --with-doctest rafem
 
