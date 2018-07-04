@@ -28,6 +28,9 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 test:
+  requires:
+    - model_metadata
+    - bmi-tester
   imports:
     - rafem
   commands:
