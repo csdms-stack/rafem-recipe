@@ -1,12 +1,14 @@
 {% set name = "rafem" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/katmratliff/avulsion-bmi
+  url: https://github.com/mcflugen/avulsion-bmi/archive/v{{ version }}.tar.gz
+  fn: avulsion-bmi-{{ version }}.tar.gz
+  sha256: 760341d154fde5cd543c8cd36cf28767df08a0aa95bcfa7cbb8af871ef4fd1e9
 
 requirements:
   build:
@@ -22,7 +24,7 @@ requirements:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 test:
   imports:
