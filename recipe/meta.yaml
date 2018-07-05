@@ -1,5 +1,5 @@
 {% set name = "rafem" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   url: https://github.com/mcflugen/avulsion-bmi/archive/v{{ version }}.tar.gz
   fn: avulsion-bmi-{{ version }}.tar.gz
-  sha256: 31a2de1bd49ad479998f8221e17f7677cbac0bed984f765c5ad8ed3f66fbeb82
+  sha256: b752a202bc2cacf72023259939030b2d7505f37d88e28c6e26d5d1d1fb3e5cc6
 
 requirements:
   build:
