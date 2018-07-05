@@ -15,12 +15,14 @@ requirements:
     - python
     - numpy
     - nose
+    - six
     - model_metadata
   run:
     - python
     - numpy
     - pyyaml
     - scipy
+    - six
     - nose
 
 build:
